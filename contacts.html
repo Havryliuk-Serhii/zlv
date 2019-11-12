@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <title>Жмеринская лига волонтеров</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand">Жмеринская лига волонтеров</a>
+    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="my-nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Новости</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Ищут дом</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Нужна помощь</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contacts.html">Контакты <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="contact-info">
+    <div class="center-cont">
+      <h2>Связаться с нами</h2>
+      <p class="lead">Мы всегда рады и открыты к общению, сотрудничеству и помощи</p>
+    </div>
+    <div class="gmap-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 text-center">
+            <div class="gmap">
+              <img src="img/contact2.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-sm-7 map-content">
+            <ul class="row">
+              <li class="col-sm-6">
+                <address>
+                  <h5>ФИО 1</h5>
+                  <p>тел:670-898-2847</p>
+
+                </address>
+
+                <address>
+                  <address>
+                    <h5>ФИО 2</h5>
+                    <p>тел:670-898-2847</p>
+                  </address>
+              </li>
+              <li class="col-sm-6">
+                <address>
+                  <h5>ФИО3</h5>
+                  <p>тел:670-898-2847</p>
+                </address>
+
+                <address>
+                  <h5>ФИО4</h5>
+                  <p>тел:670-898-2847</p>
+                </address>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact-page">
+    <div class="container">
+      <div class="center">
+        <h2>Оставьте нам Ваше сообщение</h2>
+        <p class="lead">Мы ответим на все интересующие Вас вопросы</p>
+      </div>
+      <div class="row contact-wrap">
+        <div class="status alert alert-success" style="display: none"></div>
+        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+          <div class="col-sm-5 col-sm-offset-1">
+            <div class="form-group">
+              <label>Имя *</label>
+              <input type="text" name="name" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" name="email" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <label>Телефон</label>
+              <input type="text" class="form-control" required="required">
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-group">
+              <label>Сообщение *</label>
+              <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Отправить
+                сообщение</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="copyright">
+      <p class="text-block">&copy; 2019 Жмеринская Лига Волонтеров</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
