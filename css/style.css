@@ -1,66 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   font-size: 16px;
   font-family: ;
   height: 100%;
   color: #ffffff;
+  min-width: 320px;
 }
-
+ul,li {
+  color: #ffffff;
+  font-size: 1.2rem;
+  
+}
+a {
+  color: #ffffff;
+}
+h1{
+  font-size: 3.5rem;
+}
 .wrapper {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
-/*
-* Header
-*/
-.navbar {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  z-index: 2;
-  width: 100%;
-  height: 65px;
-  align-items: baseline;
-}
-
-.navbar-brand {
-  width: 30%;
-}
-
-#my-nav {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-}
-
-.navbar-nav{
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-
-}
-.nav-item {
-padding: 20px;
-color: #ffffff;
-}
-
-button{
-  border: 1px solid white;
-  border-radius: 10px;
-  color: #fff;
-  z-index: 2;
-}
-
-
-
 /* 
 * Video and video background
  */
-.video-background-container {
+ .video-background-container {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -84,6 +53,75 @@ video {
   top: 0;
   left: 0;
 }
+/*
+* Header
+*/
+.navbar {
+  margin: 0 auto;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+}
+.navbar-brand {
+ margin-left: 5%;
+}
+.navbar-nav{
+  margin-right: 5%;
+}
+.nav-item {
+padding: 10px 25px;
+
+}
+.nav-item a::after {
+  content: '';
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	height: 1px;
+	transform: scale(0);
+  transition: all .3s;
+  color: #ffffff;
+  z-index: 2;
+}
+.nav-item a:hover{
+  color: #ffffff;
+}
+.nav-item a:hover::after{
+  transform: scale(1);  
+}
+/*
+* Home section content
+*/
+.text-center{
+  position: absolute;
+	top: 35%;
+  left: 20%;
+  z-index: 2;
+}
+.lead{
+  padding-left: 30px;
+  z-index: 3; 
+}
+.lead .btn{
+  height: 60px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.lead .btn:hover{
+  box-shadow: 0 4px 16px rgba(0,0,0,.5);
+}
+button{  
+  border: 1px solid white;
+  border-radius: 10px;
+  color: #fff;
+  z-index: 2;
+}
+
+
+
+
 
 
 
