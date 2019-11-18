@@ -9,6 +9,11 @@ html, body{
   height: 100%;
   color: #ffffff;
   min-width: 320px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 ul,li {
   color: #ffffff;
@@ -24,6 +29,21 @@ a:hover{
 h1{
   font-size: 3.5rem;
 }
+section{
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+
+}
 .wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -34,6 +54,12 @@ h1{
   justify-content: space-between;
   height: 100vh;
   
+}
+.page-title{
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  padding: 30px 0;
 }
 /* 
 * Video and video background
@@ -71,6 +97,9 @@ video {
   width: 100%;
   height: 70px;
 }
+.bg-dark{
+ opacity: 0.2;
+}
 .navbar-brand {
  margin-left: 5%;
 }
@@ -79,6 +108,7 @@ video {
 }
 .nav-item {
 padding: 10px 25px;
+text-shadow: 1px 4px 16px rgba(0, 0, 0);
 
 }
 .nav-item a::after {
@@ -133,6 +163,29 @@ padding: 10px 25px;
   background-color: #dae0e5;
 }
 /*
+* Blog
+*/
+#blog{
+  margin-top: 70px;
+}
+
+/*
+* Gallery
+*/
+
+/*
+* Help
+*/
+
+/*
+* Contact
+*/
+#contact{
+  margin-top: 70px;
+  width: 100%;
+  
+}
+/*
 * Footer
 */
 
@@ -161,11 +214,5 @@ padding: 10px 25px;
   text-shadow: 1px 4px 16px rgba(0, 0, 0, 0.9);
   z-index: 3;
 }
-.footer a {
-  color: #fff;
-}
 
-.footer a:hover {
-  color: #fff;
-}
 
