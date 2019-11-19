@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="wrapper">  
+        <nav class="navbar navbar-expand-lg fixed-top">
                 <a class="navbar-brand">Жмеринская лига волонтеров</a>
                 <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="my-nav" class="collapse navbar-collapse">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                       <a class="nav-link" href="index.html">Главная</a>
                     </li>
@@ -43,15 +44,23 @@
 <div class="img-bg-container">
             <img class="header-bg" src="./img/hero-bg.jpg" alt="header background">
         </div>
-<div class="breadcrumb-container">
+        <main class="main" id="main" role="main">
+            <article class="content">
+                <div class="breadcrumb-container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
                     <li class="breadcrumb-item active" aria-current="page">Нужна помощь</li>
                 </ol>
             </nav>
-        </div>
-        
+            </div>
+            <div class="page-title">
+                    <h2>Нужна помощь</h2>
+                    <p class="lead">В данном разделе Мы просим всех отзывчивых людей оказать нам помощь</p>
+                </div>
+            </article>
+        </main>
+    </div>    
     <footer class="footer">
         <div class="copyright">
             <p class="text-block">&copy; 2019 Жмеринская Лига Волонтеров</p>
