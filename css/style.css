@@ -32,6 +32,10 @@ h3{
   font-size: 1.35em;
   font-weight: 700;
 }
+h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .wrapper {
   display: -webkit-flex;
   display: -moz-flex;
@@ -250,7 +254,6 @@ text-shadow: 1px 4px 16px rgba(0, 0, 0);
 border: none;
 color: #000;
 padding: 20px;
-
 }
 .card-img{
 border-radius: 5px;
@@ -386,11 +389,33 @@ input{
 .post-content{
   color: #000;
 }
-
 /*
 * Gallery
 */
-
+.card-block{
+  padding: 5px;
+  color: #000;
+  border:none;
+}
+.car-block-img{
+  width: 100%;
+  height: auto;
+}
+.card-info{
+  padding: 10px;
+  text-transform: capitalize;
+  border-radius: 3px;
+  background-color: #1b1b1b;
+  opacity: 0.6;
+  width: 50%;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+}
+.card-title-left{
+  color: #fff;
+  padding-left: 30px;  
+}
 /*
 * Help
 */
