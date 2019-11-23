@@ -105,7 +105,6 @@ video {
   width: 100%;
   height: 70px;
 }
-
 .navbar-brand {
  margin-left: 5%;
  border: 1px solid #fff;
@@ -137,10 +136,6 @@ text-shadow: 1px 4px 16px rgba(0, 0, 0);
 .nav-item a:hover::after{
   transform: scale(1);  
 }
-/*
-*
-*/
-
 /*
 * Content
 */
@@ -441,65 +436,33 @@ flex-direction: row;
   background-color: #1b1b1b;
   opacity: 0.6;
 }
-
 .single-feature:after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: none repeat scroll 0% 0% #eee;
-    left: -11px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 38%;
-    opacity: 0;
-    -webkit-transition: all .4s ease 0s;
-    -o-transition: all .4s ease 0s;
-    transition: all .4s ease 0s;
-}
-
-.single-feature:hover,.single-feature:hover.single-feature:after,
-.nav-tabs li.active .single-feature,.nav-tabs li.active .single-feature:after {
     background: #fff;
     color: #000;
 }
-.nav-tabs {
-    border-bottom: 0px;
-}
-.nav-tabs > li > a {
-    border: 0px!important;
-    text-decoration: none;
-}
-
-.feature-icon {
-    position: relative;
-    margin: 15px auto;
-    font-size: 34px;
-    line-height: 80px;
-}
-
-.feature-content {
-    padding: 10px 0px;
-}
-
-.feature-content h4 {
-    line-height: 30px;
-}
-
-.feature-content p {
-    margin: 10px 0px;
-}
-
-.tab-content {
-}
-
 .tab-content img {
     width: 100%;
     height: 100%;
 }
-
+.card-header{
+  color: #000;
+}
+a .btn-link{
+  text-decoration: none;
+  color: #000;
+}
+a .btn-link .colapsed{
+  text-decoration: none;
+  color: #1b1b1b;
+  opacity: 0.6;
+}
+a .btn-link:hover,
+a .btn-link:after,
+a .btn-link:visited{
+  text-decoration: none;
+  color: #1b1b1b;
+  opacity: 0.6;
+}
 
 .help-action{
   text-align: center;
