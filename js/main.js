@@ -7,6 +7,12 @@
 		// Fixed nav
 		wScroll > 1 ? $('#nav').addClass('bg-dark') : $('#nav').removeClass('bg-dark');
 		});
+
+	// magnificPopup
+	$('.photo').magnificPopup({
+		delegate: '.lightbox',
+		type: 'image'
+	});
 	
 })(jQuery);
 
