@@ -347,7 +347,7 @@ aside{
   float: right;
   padding-left: 2%;
   justify-content: flex-start;
-  padding-top: 45%;
+  padding-top: 40%;
 }
 input{
   text-shadow: none;
@@ -489,6 +489,20 @@ font-weight: normal;
   padding: 5px;
   color: #000;
   border:none;
+  margin: 10px;
+}
+.card-block .overlay {
+  background: #1b1b1b;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 .card-block-img{
   width: 100%;
@@ -584,7 +598,9 @@ a .btn-link:visited{
   margin: 0 auto;
 }
 .contact-list{
-  list-style: none;  
+  list-style: none;
+  text-align: center;
+  padding-top: 30px;  
 }
 .contact-item p{
   color: #000;
@@ -616,7 +632,7 @@ a .btn-link:visited{
 }
 .bg-dark{
   color: ##1b1b1b;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 /*
 * Responsive
