@@ -14,14 +14,15 @@ html, body{
   height: 100%;
   width: 100%;
   left: 0;
-  right: 0;      
+  right: 0; 
+  font-family: 'Montserrat', sans-serif;     
 }
 .wrapper{
   min-height: 100%;  
 }
 ul,li {
   color: #ffffff;
-  font-size: 1.2rem;  
+  font-size: 1rem;  
 }
 a {
   color: #ffffff;
@@ -32,23 +33,28 @@ a:hover{
 h1{
   font-size: 3.5rem;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 h2{
   font-size: 2rem;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 h3{
   font-size: 1.35em;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 h4{
   font-size: 1.2rem;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 h5{
   color: #000;
   font-size: 1.2rem;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 .main{
   width: 100%;
