@@ -215,10 +215,10 @@ video {
 * Home section content
 */
 .text-center{
-  position: absolute;
+  	position: absolute;
 	top: 35%;
-  left: 20%;
-  z-index: 2;
+  	left: 20%;
+  	z-index: 2;
 }
 .lead{
   padding-left: 30px;
@@ -702,14 +702,92 @@ a .btn-link:visited{
 * Responsive
 */
 @media (min-width: 992px) and (max-width: 1199px){
+/*
+* Home
+*/
 ul,li {
-  font-size: 0.9rem;  
+  font-size: 0.8rem;
+}
+.navbar{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
 }
 .navbar-brand{
-  font-size: 0.9rem;
+	font-size: 0.9rem;
+}
+.nav-item{
+	padding-right: 10px;
 }
 .text-center {
-  left: 15%;
+  left: 20%;
+}
+h1{
+	font-size: 3rem;
+}
+.lead{
+	padding-left: 20px;
+	font-size: 1rem;
+}
+.lead .btn{
+	font-size: 1rem;
+	height: 40px;
+}
+/*
+* Blog
+*/
+.content{
+	width: 700px;
+}
+.card-img{
+  width: 50%;
+}
+.card-body{
+	padding-top: 0;
+}
+/*
+* Sidebar
+*/
+aside{
+   padding-top: 55%;     
+}
+
+form.form-inline{
+ display: block;
+ height: 35px;
+}
+.form-control{
+	width: 150px;
+	float: left;
+}	
+.btn-submit{
+  padding: 4px 8px 2px 8px;
+  margin: 5px;
+  float: right; 
+}
+.widget{
+  	margin: 3%;
+}
+.widget-item a{
+ 	font-size: 1rem;
+}
+.widget-item a:hover{
+	font-size: 1rem;
+}
+/*
+* Footer
+*/
+.text-block{
+	font-size: 0.9rem;
 }
 }
 @media (min-width: 768px) and (max-width: 991px){
