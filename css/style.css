@@ -752,7 +752,10 @@ h1{
   width: 50%;
 }
 .card-body{
-	padding-top: 0;
+	padding: 0 15px 15px 15px;
+}
+.aftertitle-meta{
+	padding: 5px;
 }
 /*
 * Sidebar
@@ -761,19 +764,7 @@ aside{
    padding-top: 55%;     
 }
 
-form.form-inline{
- display: block;
- height: 35px;
-}
-.form-control{
-	width: 150px;
-	float: left;
-}	
-.btn-submit{
-  padding: 4px 8px 2px 8px;
-  margin: 5px;
-  float: right; 
-}
+
 .widget{
   	margin: 3%;
 }
