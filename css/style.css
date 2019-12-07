@@ -470,6 +470,7 @@ font-weight: normal;
   display: -o-flex;
   display: flex;
   justify-content: space-around;
+  margin-top: 1rem;
 }
 .form-lable{
   width: 50%;
@@ -760,13 +761,21 @@ h1{
 	padding: 5px;
 }
 /*
+* Single post
+*/
+
+/*
 * Sidebar
 */
 aside{
    padding-top: 55%;     
 }
-
-
+input{
+	font-size: 0.8rem;
+}
+.form-inline .form-control{
+	width: 150px;
+}
 .widget{
   	margin: 3%;
 }
@@ -776,6 +785,7 @@ aside{
 .widget-item a:hover{
 	font-size: 1rem;
 }
+
 /*
 * Footer
 */
@@ -787,7 +797,9 @@ aside{
 
 }
 @media (min-width: 576px)and (max-width: 767px) {
-
+.form-inline .form-control{
+	width: 100px;
+}
 }
 @media (min-width: 320px) and (max-width: 575px) {
 
