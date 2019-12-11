@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   overflow-x:  hidden;  
 }
 html, body{
@@ -159,17 +159,19 @@ video {
   background: #1b1b1b;
   opacity: 0.6;
 }
-.header-bg{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+img.header-bg{
+	object-fit: cover;
+  	width: 100vw;
+  	height: 100%;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
 }
 /*
 * Content
 */
 .content{
-  width: 900px;
+  width: 62%;
   margin-left: 40px;
   margin-bottom: 1.5em;
   margin-top: 200px;
@@ -188,7 +190,7 @@ video {
   float: left;
   display: block;
   overflow: hidden;
-  width: 100%;    
+  width:80%;    
 }
 .breadcrumb {
   display: -ms-flexbox;
@@ -215,10 +217,10 @@ video {
 * Home section content
 */
 .text-center{
-  	position: absolute;
+  position: absolute;
 	top: 35%;
-  	left: 20%;
-  	z-index: 2;
+  left: 20%;
+  z-index: 2;
 }
 .lead{
   padding-left: 30px;
@@ -363,7 +365,8 @@ aside{
   float: right;
   padding-left: 2%;
   justify-content: flex-start;
-  padding-top: 40%;
+  padding-top: 45%;
+  width: 35%;
 }
 input{
   text-shadow: none;
@@ -562,13 +565,11 @@ font-weight: normal;
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
 }
-
 .photo:hover .overlay {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
     opacity: 0.8;
 }
-
 .photo .photo-content {
     position: absolute;
     left: 25px;
@@ -578,7 +579,6 @@ font-weight: normal;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-
 }
 .photo .photo-link {
     text-align: center;
@@ -587,7 +587,6 @@ font-weight: normal;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
 }
-
 .photo .photo-link a {
     display: inline-block;
     width: 50px;
@@ -715,29 +714,15 @@ a .btn-link:visited{
   color: #1b1b1b;
   opacity: 0.8;
 }
-/*
-* Responsive
-*/
+/*==================
+    Responsive
+====================*/
 @media (min-width: 992px) and (max-width: 1199px){
 /*
 * Home
 */
 ul,li {
-  font-size: 0.8rem;
-}
-.navbar{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	-moz-flex-direction: row;
-	-ms-flex-direction: row;
-	-o-flex-direction: row;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: baseline;
+  	font-size: 0.8rem;
 }
 .navbar-brand{
 	font-size: 0.9rem;
@@ -746,7 +731,7 @@ ul,li {
 	padding-right: 10px;
 }
 .text-center {
-  left: 20%;
+  	left: 20%;
 }
 h1{
 	font-size: 3rem;
@@ -766,7 +751,7 @@ h1{
 	width: 700px;
 }
 .card-img{
-  width: 50%;
+  	width: 50%;
 }
 .card-body{
 	padding: 0 15px 15px 15px;
@@ -778,7 +763,7 @@ h1{
 * Comments
 */
 .media-img{
-  width: 85%;
+  	width: 85%;
 }
 .media-body{
 	font-size: 0.8rem;
@@ -790,7 +775,7 @@ h1{
 * Sidebar
 */
 aside{
-   padding-top: 55%;     
+   	padding-top: 55%;     
 }
 input{
 	font-size: 0.8rem;
@@ -811,7 +796,7 @@ input{
 * Help
 */
 .single-feature {
-  padding-top: 15px;
+  	padding-top: 15px;
 }
 /*
 * Footer
@@ -834,7 +819,7 @@ i{
 * Home section content
 */
 ul,li {
-  font-size: 0.9rem;
+  	font-size: 0.9rem;
 }
 
 .navbar-brand{
@@ -853,7 +838,7 @@ h1{
 * Blog
 */
 .content{
-	width: 476px;
+	width: 62%;
 }
 .card{
 	-webkit-flex-direction: column;
@@ -874,29 +859,24 @@ h1{
 .aftertitle-meta{
 	padding: 10px;
 }
-/*
-* Sidebar
-*/
-aside{
-   padding-top: 70%;
-   padding-left: 1%;     
-}
 .fa-user-circle,
 .fa-calendar-alt,
 .fa-comment,
 .fa-search{
     color: #000;
 }
+/*
+* Sidebar
+*/
+aside{
+   padding-top: 70%;
+}
+.form-inline .form-control{
+	width: 100px;
+}
 .widget-item a,
 .widget-item a:hover{
  	font-size: 0.9rem;
-}
-/*
-* Gallery
-*/
-/*.col-md-6{
-  flex: 0 0 100%;
-  max-width: 100%;
 }
 /*
 * Help
@@ -908,23 +888,177 @@ aside{
 	-o-flex-direction: column;
 	flex-direction: column;
 }
-
-.contact-area{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+}
+@media (min-width: 576px)and (max-width: 767px) {
+.main{
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+/*
+* Toggle menu
+*/
+button:focus{
+	outline: none;
+}
+i{	
+	color: #fff;
+}
+/*
+* Home section content
+*/
+ul,li {
+  	font-size: 0.8rem;
+}
+.navbar-brand{
+	font-size: 0.8rem;
+}
+.text-center {
+  left: 15%;
+}
+h1{
+	font-size: 2rem;
+}
+.lead{
+  padding-left: 0;
+}
+.lead .btn{
+	font-size: 0.9rem;
+	height: 30px;
+	padding-bottom: 25px;
+}
+/*
+* Blog
+*/
+.content{
+	width: 86%;
+}
+p.lead{
+  font-size: 0.9rem;
+}
+.card{
 	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
+  padding-top: 0;  
 }
+.card-img{
+  width: 100%;
 }
-@media (min-width: 576px)and (max-width: 767px) {
-.form-inline .form-control{
-	width: 100px;
+.card-body{
+	padding: 15px;
+}
+.card-title{
+	text-align: center;
+}
+.aftertitle-meta{
+	padding: 10px;
+}
+.fa-user-circle,
+.fa-calendar-alt,
+.fa-comment,
+.fa-search{
+    color: #000;
+}
+.card-text{
+  font-size: 0.8rem;
+}
+a.btn-post{
+  font-size: 0.9rem;
+}
+/*
+* Sidebar
+*/
+aside{
+  padding: 3%;
+  width: 100%;
+  text-align: center;
+}
+form{
+	width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+.widget-item a,
+.widget-item a:hover{
+ 	font-size: 0.9rem;
+}
+/*
+* Single post
+*/
+.post-title{
+  font-size: 2rem;
+}
+p{
+  font-size: 0.8rem
+}
+/*
+* Comments
+*/
+.comments{
+  background: #1b1b1b;
+  opacity: 0.6;
+  border-radius: 5px;  
+}
+.media-left{
+  padding: 15px;
+}
+.media-img{
+  border-radius: 50%;
+  border:1px solid #fff;
+  width: 100%;
+}
+.media-body{
+padding: 20px 10px 10px 10px;
+font-size: 0.9rem;
+font-weight: normal;
+}
+.media-heading{
+  text-align: center;
+}
+.comment-date{
+  padding: 20px;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+/*
+* Form
+*/
+.form-control{
+  font-size: 0.8rem;
+}
+.btn-submit{
+  font-size: 0.8rem;
+}
+/*
+* Help
+*/
+.contact-form{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/*
+* Footer
+*/
+.text-block{
+  font-size: 0.8rem;
 }
 }
 @media (min-width: 320px) and (max-width: 575px) {
