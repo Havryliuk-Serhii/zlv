@@ -193,10 +193,17 @@ img.header-bg{
   width:80%;    
 }
 .breadcrumb {
-  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  align-items: baseline;
   padding: 0.75rem 4rem;
   margin-bottom: 1rem;
   background-color: transparent;
@@ -1068,6 +1075,9 @@ font-weight: normal;
   -o-flex-direction: column;
   flex-direction: column;
 }
+.page-title{
+  padding: 15px;
+}
 /*
 * Toggle menu
 */
@@ -1209,11 +1219,78 @@ font-weight: normal;
 /*
 * Form
 */
+.form-group{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;-webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.form-lable{
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
 .form-control{
   font-size: 0.8rem;
 }
 .btn-submit{
   font-size: 0.8rem;
+}
+/*
+* Gallery
+*/
+.card-block{
+  padding: 5px;
+  margin: 5px;
+}
+.photo {
+  padding: 5px;
+}
+.card-info{
+  padding: 8px;
+  width: 50%;
+  bottom: 20px;
+  left: 0;
+}
+.card-title-left{
+  padding-left: 20px;
+  font-size: 1rem;
+  margin: 0;  
+}
+/*
+* Help
+*/
+.feature-tab {
+  margin-top: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.single-feature {
+  margin: 10px 0px;
+  border-radius: 4px;
+  position: relative;
+  -webkit-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  color: #fff;
+  background-color: #1b1b1b;
+  opacity: 0.6;
+}
+.tab-content{
+  display: none;
 }
 /*
 * Contacts
@@ -1230,6 +1307,9 @@ font-weight: normal;
   -o-flex-direction: column;
   flex-direction: column;
   justify-content: flex-end;
+}
+.contact-img{
+  display: none;
 }
 /*
 * Footer
