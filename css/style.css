@@ -655,10 +655,6 @@ blockquote{
 .card-header{
   color: #000;
 }
-a.btn{
-  border: none;
-  width: 100%;
-}
 a .btn-link{
   text-decoration: none;
   color: #000;
