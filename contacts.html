@@ -1,11 +1,53 @@
-<?php
-/*
-Template Name: Contact Page
-*/
-get_header();
-?>
+<!doctype html>
+<html lang="ru">
 
-<article class="content">
+<head>
+  <title>Жмеринская лига волонтеров</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <header class="header">
+  <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+    <a href="index.html" class="navbar-brand">Жмеринская лига волонтеров</a>
+    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div id="my-nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Новости</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Ищут дом</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Нужна помощь</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contacts.html">Контакты <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img-bg-container">
+            <img class="header-bg" src="./img/hero-bg.jpg" alt="header background">
+        </div>
+  </header>      
+        <main class="main" id="main">
+          <article class="content">
             <div class="breadcrumb-container">
               <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
@@ -83,5 +125,22 @@ get_header();
     </div>
   </section>
   </article>
-<?php
-  get_footer();
+  </main>
+
+</div>
+  <footer class="footer bg-dark">
+    <div class="footer-content">
+    <div class="copyright">
+      <p class="text-block">&copy; 2019 Жмеринская Лига Волонтеров</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../zlv/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../zlv/js/popper.min.js"></script>
+  <script src="../zlv/js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="../zlv/js/main.js"></script>
+</body>
+</html>

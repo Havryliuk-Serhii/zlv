@@ -1,10 +1,51 @@
-<?php
-/*
-Template Name: Page Help
-*/
-    get_header();
-?>
-<article class="content">
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Жмеринская лига волонтеров</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Magnific Popup -->
+    <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">  
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">  
+        <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+                <a href="index.html" class="navbar-brand">Жмеринская лига волонтеров</a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button> 
+                <div id="my-nav" class="collapse navbar-collapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Ищут дом</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="help.html">Нужна помощь <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        <div class="img-bg-container">
+            <img class="header-bg" src="./img/hero-bg.jpg" alt="header background">
+        </div>
+        </header>  
+        <main class="main" id="main">
+            <article class="content">
                 <div class="breadcrumb-container">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -38,13 +79,13 @@ Template Name: Page Help
                                     <div class="card-accordion">
                                         <div class="card-header" id="headingOne" role="presentation">
                                             <a href="#housing" role="tab" data-toggle="tab" >
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Передержка животных</button>
-                                                </h5>
+                                                <div class="mb-0">
+                                                    <div role="link" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Передержка животных</div>
+                                                </div>
                                             </a>
                                         </div>
-                                        <div id="collapseOne" class="collapse show active" aria-labelledby="headingOne" data-parent="#accordionExample">                                            
-                                            <div class="card-body single-feature">                                           
+                                        <div id="collapseOne" class="collapse show active" aria-labelledby="headingOne" data-parent="#accordionExample">                              
+                                            <div class="card-body single-feature">                                
                                                 <p>У нас очень много животных, но мало места. Мы вынуждены просить друзей и знакомых разместить на некоторое время у себя хотя-бы пару хвостов.</p>
                                             </div>                                            
                                         </div>
@@ -52,13 +93,13 @@ Template Name: Page Help
                                     <div class="card-accordion">
                                         <div class="card-header" id="headingTwo" role="presentation">
                                             <a href="#feed" role="tab" data-toggle="tab">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Корма для животных</button>
-                                                </h5>
+                                                <div class="mb-0">
+                                                    <div role="link" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Корма для животных</div>
+                                                </div>
                                             </a>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                            <div class="card-body single-feature">                                               
+                                            <div class="card-body single-feature">                               
                                                 <p>К нам постоянно попадают все новые и новые жильцы у которых отменный аппетит вызванный уличным недоеданием.</p>
                                             </div>
                                         </div>
@@ -66,12 +107,12 @@ Template Name: Page Help
                                     <div class="card-accordion">
                                         <div class="card-header" id="headingThree" role="presentation">
                                             <a href="#medicines" role="tab" data-toggle="tab">
-                                                <h5 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Лекарства для животных</button>
-                                                </h5>
+                                                <div class="mb-0">
+                                                    <div role="link" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Лекарства для животных</div>
+                                                </div>
                                             </a>
                                         </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">                                            
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">                                          
                                             <div class="card-body single-feature">
                                                 <p>Всех животных мы лечим и обязательно обрабатываем от блох, глистов и стерилизуем.</p>
                                             </div>                                            
@@ -92,6 +133,7 @@ Template Name: Page Help
             </article>
             <aside class="sidebar">
                 <section class="search-form">
+                    <h3>Widget</h3>
                    <form class="form-inline">
                      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn-submit" type="submit"><i class="fas fa-search"></i></button>
@@ -105,6 +147,21 @@ Template Name: Page Help
                     </ul>
                 </section>
             </aside>
-<?php
-    get_sidebar();
-    get_footer();
+        </main>
+    </div>    
+    <footer class="footer bg-dark">
+        <div class="footer-content">
+            <div class="copyright">
+                <p class="text-block">&copy; 2019 Жмеринская Лига Волонтеров</p>
+            </div>
+        </div>              
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../zlv/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../zlv/js/popper.min.js"></script>
+    <script src="../zlv/js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="../zlv/js/main.js"></script>
+  </body>
+</html>
