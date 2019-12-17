@@ -337,7 +337,7 @@ i{
   justify-content: center;
   padding: 20px;
 }
-h3.title-pagination{
+.title-hidden{
   display: none;
 }
 .page-item {
